@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #191919;
+}
+
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.55rem 0 !important;
+  z-index: 1;
+}
+
+.bg-dark {
+  background-color: #191919 !important;
+}
+
+.hero {
+  margin-top: 1.5rem;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.hero .title {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+.hero .hero-team {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100);
+}
+.hero .container .row .col {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.blob1, .blob2 {
+  position: absolute;
+  height: 800px;
+  width: auto;
+}
+
+.blob1 {
+  top: -9rem;
+  left: -12rem;
+}
+
+.blob2 {
+  bottom: -8rem;
+  right: -12rem;
+}
+
+.logo {
+  color: #fff;
+  padding-top: 0.1rem;
+}
+.logo h5 {
+  margin: 0;
+  margin-bottom: -0.3rem;
+}
+.logo:hover {
+  color: #5B4DFF;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 0.8rem 0.1rem;
+  margin-inline: 0.5rem;
+}
+.nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 3s ease-in;
+}
+.nav-link:focus {
+  color: #5B4DFF;
+}
+
+.services {
+  padding: 3rem 0;
+  color: #fff;
+}
+.services .ourservices {
+  font-weight: 700;
+}
+.services .service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.services .service-cards .card {
+  padding: 2rem;
+  width: 21rem;
+  border: none;
+  margin: auto;
+  background: transparent !important;
+  margin-bottom: 2rem;
+  transition: all ease-in 100ms;
+}
+.services .service-cards .card h4 {
+  color: #fff;
+}
+.services .service-cards .card:hover {
+  transform: scale(1.01);
+}
+.services .service-cards .card img {
+  margin: 1rem -0.5rem;
+  height: 50px;
+  width: 50px;
+}
+.services .service-cards .card p {
+  color: #7c7c7c;
+}
+.services .service-cards .card a {
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+.services .service-cards .card a:visited {
+  color: #fff;
+}
+.services .service-cards .card a h6 {
+  transition: 0.2s ease-in;
+}
+.services .service-cards .card a h6:hover {
+  color: #2e68ff;
+}
+
+footer {
+  color: #fff;
+}
+
+a.left {
+  position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
