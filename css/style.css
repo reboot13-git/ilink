@@ -34,6 +34,11 @@ nav {
   margin-top: 1rem;
   width: 100%;
   position: relative;
+  background: url(/imgs/hero-bg.png) no-repeat center center;
+  background-size: cover;
+}
+.hero .container {
+  position: relative;
 }
 .hero .title {
   font-weight: 600;
@@ -64,7 +69,7 @@ nav {
 
 .blob1, .blob2 {
   position: absolute;
-  height: 800px;
+  height: auto;
   width: auto;
   z-index: -1;
 }
@@ -108,9 +113,6 @@ nav {
 .services {
   padding: 3rem 0;
   color: #fff;
-}
-.services .ourservices {
-  font-weight: 700;
 }
 .services .service-cards {
   display: grid;
@@ -191,13 +193,37 @@ a.left:before {
   .service-cards {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+
+  .blob1, .blob2 {
+    height: 500px;
+    width: auto;
+  }
+
+  .blob1 {
+    top: 0rem;
+    left: -2rem;
+  }
+
+  .blob2 {
+    bottom: 0rem;
+    right: -2rem;
+  }
 }
 @media only screen and (max-width: 500px) {
+  .blob1, .blob2 {
+    height: 500px;
+    width: auto;
+  }
+
   .card {
     width: 18rem !important;
   }
 
   .service-cards {
     grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .footer {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
