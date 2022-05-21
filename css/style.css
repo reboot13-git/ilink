@@ -57,7 +57,7 @@ nav {
 }
 
 .hero {
-  margin-top: 1rem;
+  margin-top: 1.9rem;
   width: 100%;
   position: relative;
   background: url(/imgs/hero-bg.png) no-repeat center center;
@@ -95,7 +95,7 @@ nav {
 
 .aboutus {
   background: url(/imgs/about-us.png) no-repeat center center;
-  background-size: contain;
+  background-size: cover;
 }
 .aboutus #aboutus, .aboutus .lead {
   color: #fff !important;
@@ -125,7 +125,7 @@ nav {
   padding: 3rem 0;
   color: #fff;
   background: url(/imgs/service-bg.png) no-repeat center center;
-  background-size: contain;
+  background-size: cover;
 }
 .services .service-cards {
   margin-top: 5rem !important;
