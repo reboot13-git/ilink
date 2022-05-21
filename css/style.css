@@ -31,19 +31,26 @@ nav {
 }
 
 .hero {
-  margin-top: 1.5rem;
-  height: 100vh;
+  margin-top: 1rem;
   width: 100%;
   position: relative;
 }
 .hero .title {
   font-weight: 600;
   font-size: 3.5rem;
+  color: #fff;
+}
+.hero .sub-title {
+  font-size: 0.9rem;
+  color: #fff;
 }
 .hero .hero-team {
   width: 100%;
   height: auto;
   filter: grayscale(100);
+}
+.hero .container {
+  z-index: 111;
 }
 .hero .container .row .col {
   height: 100vh;
@@ -59,6 +66,7 @@ nav {
   position: absolute;
   height: 800px;
   width: auto;
+  z-index: -1;
 }
 
 .blob1 {
@@ -164,4 +172,32 @@ a.left:before {
   background-color: #FFF;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 19rem !important;
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 25rem !important;
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 18rem !important;
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }/*# sourceMappingURL=style.css.map */
