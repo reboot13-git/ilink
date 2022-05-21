@@ -190,12 +190,21 @@ a.left:before {
 }
 
 
-
+@media only screen and (min-width: 1000px){
+    .hero{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
 
 @media only screen 
    and (max-width : 1000px) {
     .card{
-        width: 19rem!important;
+        width: 25rem!important;
+       
     }
 
     .service-cards{
@@ -206,8 +215,18 @@ a.left:before {
 
 @media only screen 
    and (max-width : 800px) {
+       .ourservices,.servicetag{
+           text-align: center;
+       }
+       .hero-content{
+           text-align: center;
+       }
     .card{
-        width: 25rem!important;
+        width: 19rem!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .service-cards{
@@ -232,6 +251,14 @@ a.left:before {
 
 @media only screen 
    and (max-width : 500px) {
+       .hero{
+           .title{
+               font-size: 2.5rem;
+           }
+           .sub-title{
+               font-size: .6rem;
+           }
+       }
     .blob1,.blob2{
         height: 500px;
         width: auto;
