@@ -113,8 +113,11 @@ nav {
 .services {
   padding: 3rem 0;
   color: #fff;
+  background: url(/imgs/service-bg.png) no-repeat center center;
+  background-size: cover;
 }
 .services .service-cards {
+  margin-top: 5rem !important;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -123,15 +126,21 @@ nav {
   width: 21rem;
   border: none;
   margin: auto;
-  background: transparent !important;
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(114, 114, 114, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 0;
   margin-bottom: 2rem;
   transition: all ease-in 100ms;
 }
-.services .service-cards .card h4 {
-  color: #fff;
-}
 .services .service-cards .card:hover {
   transform: scale(1.01);
+}
+.services .service-cards .card h4 {
+  color: #fff;
+  font-weight: 600;
 }
 .services .service-cards .card img {
   margin: 1rem -0.5rem;
@@ -139,7 +148,7 @@ nav {
   width: 50px;
 }
 .services .service-cards .card p {
-  color: #7c7c7c;
+  color: #ffffff;
 }
 .services .service-cards .card a {
   margin-top: 1rem;

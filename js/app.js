@@ -2,7 +2,7 @@
 let servicesInfo=[
     {
         "imgUrl": "https://img.icons8.com/nolan/64/web.png",
-        "heading": "Website Development",
+        "heading": "Web Development",
         "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis reprehenderit recusandae rerum ab placeat! At cum atque quos velit ut praesentium esse ipsum sunt quo?",
         "linkText": "Get your own Website now →",
         "id": "web"
