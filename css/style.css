@@ -30,6 +30,32 @@ nav {
   background-color: #191919 !important;
 }
 
+.logo {
+  color: #fff;
+  padding-top: 0.1rem;
+}
+.logo h5 {
+  margin: 0;
+  margin-bottom: -0.3rem;
+}
+.logo:hover {
+  color: #5B4DFF;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 0.8rem 0.1rem;
+  margin-inline: 0.5rem;
+}
+.nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 3s ease-in;
+}
+.nav-link:focus {
+  color: #5B4DFF;
+}
+
 .hero {
   margin-top: 1rem;
   width: 100%;
@@ -67,54 +93,39 @@ nav {
   z-index: 1;
 }
 
-.blob1, .blob2 {
-  position: absolute;
-  height: auto;
-  width: auto;
-  z-index: -1;
+.aboutus {
+  background: url(/imgs/about-us.png) no-repeat center center;
+  background-size: contain;
 }
-
-.blob1 {
-  top: -9rem;
-  left: -12rem;
+.aboutus #aboutus, .aboutus .lead {
+  color: #fff !important;
 }
-
-.blob2 {
-  bottom: -8rem;
-  right: -12rem;
+.aboutus .laptop-hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
 }
-
-.logo {
-  color: #fff;
-  padding-top: 0.1rem;
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }
-.logo h5 {
-  margin: 0;
-  margin-bottom: -0.3rem;
-}
-.logo:hover {
-  color: #5B4DFF;
-}
-
-.nav-link {
-  color: #fff;
-  padding: 0.8rem 0.1rem;
-  margin-inline: 0.5rem;
-}
-.nav-link:hover {
-  color: #fff;
-  text-decoration: underline;
-  transition: all 3s ease-in;
-}
-.nav-link:focus {
-  color: #5B4DFF;
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }
 
 .services {
   padding: 3rem 0;
   color: #fff;
   background: url(/imgs/service-bg.png) no-repeat center center;
-  background-size: cover;
+  background-size: contain;
 }
 .services .service-cards {
   margin-top: 5rem !important;
@@ -154,6 +165,8 @@ nav {
   margin-top: 1rem;
   color: #fff;
   text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
 }
 .services .service-cards .card a:visited {
   color: #fff;
@@ -167,22 +180,6 @@ nav {
 
 footer {
   color: #fff;
-}
-
-a.left {
-  position: relative;
-}
-
-a.left:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 1000px) {
