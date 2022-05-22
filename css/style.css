@@ -190,6 +190,9 @@ nav {
   color: #2e68ff;
 }
 
+.contactus {
+  overflow: hidden;
+}
 .contactus h1 {
   color: #fff;
 }
@@ -200,7 +203,7 @@ nav {
 }
 
 .cform {
-  height: 600px;
+  height: 560px;
   width: 100%;
   overflow: hidden;
   -webkit-margin-before: 3rem;
