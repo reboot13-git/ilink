@@ -302,6 +302,11 @@ footer {
   }
 }
 @media only screen and (max-width: 500px) {
+  .footer li {
+    display: flex;
+    justify-content: center;
+  }
+
   .aboutus .container .row {
     text-align: center;
   }
