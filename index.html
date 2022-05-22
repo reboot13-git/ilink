@@ -22,7 +22,7 @@
     <!-- js  -->
     <script src="js/main.js" defer></script>
 </head>
-<body>
+<body oncontextmenu="return true">
   
     <nav class="navbar fixed-top navbar-expand-lg bg-dark">
         <div class="container">
@@ -33,13 +33,13 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link left " aria-current="page" href="#services">Services</a>
+                <button class="nav-link left " aria-current="page" onclick="scrollToDiv(this.value)" value="services">Services</button>
               </li>
               <li class="nav-item">
-                <a class="nav-link left" href="#">About Us</a>
+                <button class="nav-link left" onclick="scrollToDiv(this.value)" value="aboutus">About Us</button>
               </li>
               <li class="nav-item">
-                <a class="nav-link left navcontact" href="contact.html" >Contact Us</a>
+                <button class="nav-link left navcontact" onclick="scrollToDiv(this.value)" value="contactus" >Contact Us</button>
               </li>
        
             </ul>
@@ -63,8 +63,10 @@
         <p class="sub-title">Facilitating you in designing and developing amazing websites and applications, as well as enhancing your social media presence.
           <br> Let's work together to create something extraordinary.</p>
         <div class="d-grid gap-2 d-md-flex ">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+      
+          <button onclick="scrollToDiv(this.value)" value="contactus" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact Us</button>
+  
+          <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4"></button> -->
         </div>
       </div>
     </div>
@@ -74,14 +76,18 @@
 
 
     <!-- start of about  -->
-    <section class="aboutus">
+    <section class="aboutus" >
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
        
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3" id="aboutus">About Us</h1>
-          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, praesentium! Fugit eius autem fugiat architecto id delectus nemo qui placeat et dolores ipsam perspiciatis quidem odio quo accusantium, voluptatibus magnam recusandae ratione aperiam eos deleniti voluptas assumenda maiores nobis. Ut autem fugiat maxime suscipit? Rerum eius mollitia veritatis laboriosam aut?</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <p class="lead">
+            Hello, I am Krutik and I am the founder of Infinity Linkage. My friends and I, we have been in the industry for years and we know the problems of finding the right client for our project firsthand.
+            We joined hands and mixed our skills to form a solution to the problems we face. We created our company, to promise and to deliver the perfect platform you need.
+            Founded in 2021.
+             You can join our team, work on your expertise or hire our team for your next dream project.
+          </p>   <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <a href="https://discord.com/invite/dsVK9K3qPp" target="_blank"> 
             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join our Community</button>
           </a>
@@ -144,6 +150,19 @@
 </section> -->
 <!-- end of testimonials  -->
 
+<!-- start of contact us  -->
+<section class="contactus mb-3" id="contactus">
+  <div class="container">
+    <h1 class="display-5 fw-bold lh-1 mb-3 ourservices">Contact Us</h1>
+    <h5 class="servicetag" style="color: #fff;">Get In Touch Now</h5>
+    <div class="row">
+            <iframe class="cform" src="https://script.google.com/macros/s/AKfycbyXPCIp2xvMQUpH5HpA25Z2DZjSn16fnYP45vD2jqLkUA7VX4PJfwyTSanmL8C-xC90mg/exec" frameborder="0"></iframe>
+    </div>
+      </div>
+  </div>
+  </section>
+  <!-- end of contact us -->
+
 <!-- start of footer  -->
     <section class="footer">
       <div class="container">
@@ -167,9 +186,9 @@
           <div class="col mb-3">
             <h5 style="font-weight: 600; color:#5B4DFF">Menu</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#services" class="nav-link p-0  ">Services</a></li>
-              <li class="nav-item mb-2"><a href="#aboutus" class="nav-link p-0  ">About Us</a></li>
-              <li class="nav-item mb-2"><a href="#contactus" class="nav-link p-0  ">Contact Us</a></li>
+              <li class="nav-item mb-2"><button onclick="scrollToDiv(this.value)" value="services" class="nav-link p-0  ">Services</button></li>
+              <li class="nav-item mb-2"><button onclick="scrollToDiv(this.value)" value="aboutus" class="nav-link p-0  ">About Us</button></li>
+              <li class="nav-item mb-2"><button onclick="scrollToDiv(this.value)" value="contactus" class="nav-link p-0  ">Contact Us</button></li>
              
             </ul>
           </div>

@@ -6,6 +6,18 @@
   text-decoration: none;
 }
 
+.nav-link {
+  background: transparent;
+  border: none;
+}
+
+a:target {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -178,10 +190,21 @@ nav {
   color: #2e68ff;
 }
 
+.contactus h1 {
+  color: #fff;
+}
 .contactus .container .row {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cform {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  -webkit-margin-before: 3rem;
+          margin-block-start: 3rem;
 }
 
 .clients .container {
@@ -210,6 +233,12 @@ footer {
   color: #fff;
 }
 
+.footer {
+  background: url(/imgs/footer.png) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 1rem;
+}
+
 @media only screen and (min-width: 1000px) {
   .hero {
     height: 100vh;
@@ -233,6 +262,10 @@ footer {
   }
 }
 @media only screen and (max-width: 800px) {
+  .contactus h1 {
+    text-align: center;
+  }
+
   .ourservices, .servicetag {
     text-align: center;
   }

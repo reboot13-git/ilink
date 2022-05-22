@@ -3,6 +3,20 @@ var d = new Date()
 let fullYear = d.getFullYear()
 year.innerText = fullYear
 
+
+function scrollToDiv(id){
+  console.log(id)
+  var element = document.getElementById(id);
+  var headerOffset = 100;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+       top: offsetPosition,
+       behavior: "smooth"
+  });
+}
+
 AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
