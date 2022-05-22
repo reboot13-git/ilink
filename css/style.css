@@ -268,15 +268,15 @@ footer {
   }
 }
 @media only screen and (max-width: 500px) {
+  .aboutus .container .row {
+    text-align: center;
+  }
+
   .hero .title {
     font-size: 2.5rem;
   }
   .hero .sub-title {
     font-size: 0.6rem;
-  }
-
-  .contactus .container .row .col {
-    text-align: center;
   }
 
   .card {
