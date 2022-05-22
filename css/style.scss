@@ -190,11 +190,44 @@ nav{
     }
 }
 
+.contactus{
+    .container{
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.clients {
+    .container{
+        padding: 1.7rem 0rem;
+        backdrop-filter: blur(24px) saturate(200%);
+        -webkit-backdrop-filter: blur(16px) saturate(200%);
+        background-color: rgba(114, 114, 114, 0.14);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        border-radius: 0;
+        color: #fff!important;
+    }
+}
+.card-body{
+    padding: 1.7rem 0rem;
+    backdrop-filter: blur(24px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(114, 114, 114, 0.14);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 0;
+    color: #fff!important;
+}
 
 
 footer{
     color: #fff;
 }
+
 
 
 
