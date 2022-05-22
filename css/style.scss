@@ -191,8 +191,8 @@ nav{
 }
 
 .contactus{
-    background: url(/imgs/hero-bg.png) no-repeat center center;
-    background-size: cover;
+    // background: url(/imgs/hero-bg.png) no-repeat center center;
+    // background-size: cover;
     .container{
         .row{
             display: flex;
@@ -256,7 +256,12 @@ footer{
         grid-template-columns: repeat(2,1fr)!important;
     }
 }
-
+@media only screen 
+   and (max-width : 1200px) {  
+       .service-cards{
+    grid-template-columns: repeat(2,1fr)!important;
+}
+   }
 @media only screen 
    and (max-width : 800px) {
        
@@ -275,7 +280,7 @@ footer{
     }
 
     .service-cards{
-        grid-template-columns: repeat(2,1fr)!important;
+        grid-template-columns: repeat(1,1fr)!important;
     }
     .blob1,.blob2{
         height: 500px;

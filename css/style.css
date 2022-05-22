@@ -178,10 +178,6 @@ nav {
   color: #2e68ff;
 }
 
-.contactus {
-  background: url(/imgs/hero-bg.png) no-repeat center center;
-  background-size: cover;
-}
 .contactus .container .row {
   display: flex;
   justify-content: center;
@@ -231,6 +227,11 @@ footer {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
 @media only screen and (max-width: 800px) {
   .ourservices, .servicetag {
     text-align: center;
@@ -249,7 +250,7 @@ footer {
   }
 
   .service-cards {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 
   .blob1, .blob2 {
