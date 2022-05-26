@@ -5,7 +5,7 @@ year.innerText = fullYear
 
 
 function scrollToDiv(id){
-  console.log(id)
+  // console.log(id)
   var element = document.getElementById(id);
   var headerOffset = 100;
   var elementPosition = element.getBoundingClientRect().top;

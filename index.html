@@ -151,9 +151,10 @@
 </section> -->
 <!-- end of testimonials  -->
 
+<!-- start of contact -->
 <section class="contactus mb-3" id="contactus">
   <div class="container">
-    <!-- <h1 class="display-5 fw-bold lh-1 mb-3 ourservices">Contact Us</h1> -->
+    <h1 class="display-5 fw-bold lh-1 mb-3">Contact Us</h1>
     <h5 class="servicetag" style="color: #fff;">Get In Touch Now</h5>
     <div class="row">
       <form id="contactForm" class="row g-3 mt-8" >
@@ -175,12 +176,15 @@
         </div>
    
  <button class="btn btn-primary" type="submit" id="btnSubmit"> Submit </button>
- <div id="msg"></div>
+</div>
+ 
       </form>
     </div>
       </div>
   </div>
   </section>
+<!-- end of contact  -->
+
 
 <!-- start of footer  -->
     <section class="footer">
@@ -230,24 +234,8 @@
 
   <!-- end of footer  -->
 
-<script>
-  jQuery('#contactForm').on('submit',function(e){
-    e.preventDefault();
-    jQuery('#msg').html('Please wait...');
-    jQuery('#btnSubmit').attr('disabled',true);
-    jQuery.ajax({
-      url:'https://script.google.com/macros/s/AKfycbwzKRxS0G34_z6myhbv0BtMvhcrr4Z90pYmjLZ8X2i_HxSWts0FW2gG7lmg50ZbTDrrjA/exec',
-      type:'post',
-      data:jQuery('#contactForm').serialize(),
-      success:function(result){
-        jQuery('#contactForm')[0].reset();
-        jQuery('#msg').html('Thank You');
-        jQuery('#btnSubmit').attr('disabled',false);
-        //window.location.href='';
-      }
-    });
-    });
-</script>
+
     <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
 </body>
 </html>
