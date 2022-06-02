@@ -91,6 +91,11 @@ nav{
         width: 100%;
         height: auto;
         filter: grayscale(100);
+        transition: all 1s ease-in;
+
+        &:hover{
+            filter: none;
+        }
     }
     .container{
        z-index: 111;
@@ -109,12 +114,22 @@ nav{
     }
 }
 
+
+.btn-hover{
+    &:hover{
+         background-color: transparent;
+         border: 1px solid #2e68ff;
+         color: #2e68ff;
+    }
+}
+
 .aboutus{
     background: url(/imgs/about-us.png) no-repeat center center;
     background-size: cover;
 #aboutus,.lead{
     color: #fff!important;
 }
+
 .laptop-hover{
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite alternate;
@@ -204,8 +219,10 @@ nav{
 
 .contactus{
     background: url(/imgs/contactus.png) no-repeat center center;
+    padding-block:3rem ;
     background-size: cover;
     overflow: hidden;
+    margin-bottom: 0;
     h1{
         color: #fff;
     }

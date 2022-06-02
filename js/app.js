@@ -3,15 +3,15 @@ let servicesInfo=[
     {
         "imgUrl": "https://img.icons8.com/nolan/64/web.png",
         "heading": "Web Development",
-        "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis reprehenderit recusandae rerum ab placeat! At cum atque quos velit ut praesentium esse ipsum sunt quo?",
-        "linkText": "Get your own Website now →",
+        "description": "Our Developers offer full fledged support for the website you imagine, brought to life. We give you top quality performance in prices so affordable you can't believe",
+        "linkText": "Get your own Website now →", 
         "id": "web"
 
     },
     {
         "imgUrl": "https://img.icons8.com/nolan/64/mobile-package-tracking.png",
         "heading": "App Development",
-        "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis reprehenderit recusandae rerum ab placeat! At cum atque quos velit ut praesentium esse ipsum sunt quo?",
+        "description" : "Need an App that provides to the needs of your company? Need Developers who can provide services according to your design? If these are your questions, We are your answer.",
         "linkText": "Get an App for your business →",
         "id": "app"
 
@@ -35,7 +35,7 @@ let servicesInfo=[
     {
         "imgUrl": "https://img.icons8.com/nolan/64/video.png",
         "heading": "Content Writing",
-        "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis reprehenderit recusandae rerum ab placeat! At cum atque quos velit ut praesentium esse ipsum sunt quo?",
+        "description" : "Content that moves people, Yes please. We make content that makes you stand out and presence known.Discuss your next project for the best engaging writings.",
         "linkText": "Get an App for your business →",
         "id": "vedit"
 
