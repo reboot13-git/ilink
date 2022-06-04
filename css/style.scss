@@ -195,9 +195,12 @@ nav{
                 color: #ffffff;
             }
         
-            a{
+            button{
                 margin-top: 1rem;
                 color: #fff;
+                padding: 0;
+                align-self: flex-start;
+                margin-left: 0;
                 text-decoration: none;
                 font-style: italic;
                 font-weight: bold;

@@ -183,20 +183,23 @@ nav {
 .services .service-cards .card p {
   color: #ffffff;
 }
-.services .service-cards .card a {
+.services .service-cards .card button {
   margin-top: 1rem;
   color: #fff;
+  padding: 0;
+  align-self: flex-start;
+  margin-left: 0;
   text-decoration: none;
   font-style: italic;
   font-weight: bold;
 }
-.services .service-cards .card a:visited {
+.services .service-cards .card button:visited {
   color: #fff;
 }
-.services .service-cards .card a h6 {
+.services .service-cards .card button h6 {
   transition: 0.2s ease-in;
 }
-.services .service-cards .card a h6:hover {
+.services .service-cards .card button h6:hover {
   color: #2e68ff;
 }
 
