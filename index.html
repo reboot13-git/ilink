@@ -23,7 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js" defer></script>
 </head>
-<body oncontextmenu="return true">
+<body oncontextmenu="return false">
   
     <nav class="navbar fixed-top navbar-expand-lg bg-dark">
         <div class="container">
@@ -37,10 +37,10 @@
                 <a class="nav-link left" href="#" aria-current="page" value="home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link left" href="#services" aria-current="page" value="services">Services </a>
+                <a class="nav-link left" href="#aboutus"  value="aboutus">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link left" href="#aboutus"  value="aboutus">About Us</a>
+                <a class="nav-link left" href="#services" aria-current="page" value="services">Services </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link left navcontact" href="#contactus"  value="contactus" >Contact Us</a>
@@ -53,22 +53,23 @@
 
 
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-down"
+    data-aos-anchor-placement="center-bottom">
 
     <div class="container col-xxl-8 px-4">
       <!-- <img src="imgs/hero-blob.png" alt="blob1" class="blob1 img-fluid">
       <img src="imgs/hero-blob2.png" alt="blob2" class="blob2 img-fluid"> -->
     <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6"  data-aos="zoom-in-up">
+      <div class="col-10 col-sm-8 col-lg-6">
         <img src="imgs/hero-team.png" class="d-block mx-lg-auto img-fluid hero-team" alt="workspace" width="100%" height="500" loading="lazy">
       </div>
-      <div class="col-lg-6 hero-content" data-aos="zoom-in">
+      <div class="col-lg-6 hero-content" >
         <h1 class="display-5 lh-1 mb-3 title">Building your <br> business online.</h1>
         <p class="sub-title">Facilitating you in designing and developing amazing websites and applications, as well as enhancing your social media presence.
           <br> Let's work together to create something extraordinary.</p>
         <div class="d-grid gap-2 d-md-flex ">
       
-          <button onclick="scrollToDiv(this.value)" value="contactus" type="button" class="btn btn-primary  btn-hover btn-lg px-4 me-md-2">Contact Us</button>
+          <a href="#contactus"><button type="button" class="btn btn-primary  btn-hover btn-lg px-4 me-md-2">Contact Us</button></a>
   
           <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4"></button> -->
         </div>
@@ -84,7 +85,7 @@
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
        
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left">
           <h1 class="display-5 fw-bold lh-1 mb-3" id="aboutus">About Us</h1>
           <p class="lead">
             Finding freelancers is hard as it is,but finding quality work? That's too hard. 
@@ -213,10 +214,9 @@
           <div class="col mb-3">
             <h5 style="font-weight: 600; color:#5B4DFF">Menu</h5>
             <ul class="nav flex-column nav-footer">
-              <li class="nav-item mb-2"><button onclick="scrollToDiv(this.value)" value="services" class="nav-link p-0  ">Services</button></li>
-              <li class="nav-item mb-2"><button onclick="scrollToDiv(this.value)" value="aboutus" class="nav-link p-0  ">About Us</button></li>
-              <li class="nav-item mb-2"><button onclick="scrollToDiv(this.value)" value="contactus" class="nav-link p-0  ">Contact Us</button></li>
-             
+              <li class="nav-item mb-2"><a href="#aboutus"   class="nav-link p-0">About Us</a></li>
+              <li class="nav-item mb-2"><a href="#services"  class="nav-link p-0">Services</a></li>
+              <li class="nav-item mb-2"><a href="#contactus" class="nav-link p-0">Contact Us</a></li>
             </ul>
           </div>
 

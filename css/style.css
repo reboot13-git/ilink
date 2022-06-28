@@ -175,10 +175,10 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: 0;
   margin-bottom: 2rem;
-  transition: all ease-in 100ms;
+  transition: all ease-in 200ms;
 }
 .services .service-cards .card:hover {
-  transform: scale(1.01);
+  transform: scale(1.025);
 }
 .services .service-cards .card h4 {
   color: #fff;
@@ -192,7 +192,7 @@ nav {
 .services .service-cards .card p {
   color: #ffffff;
 }
-.services .service-cards .card button {
+.services .service-cards .card a {
   margin-top: 1rem;
   color: #fff;
   padding: 0;
@@ -202,14 +202,14 @@ nav {
   font-style: italic;
   font-weight: bold;
 }
-.services .service-cards .card button:visited {
+.services .service-cards .card a:visited {
   color: #fff;
 }
-.services .service-cards .card button h6 {
+.services .service-cards .card a h6 {
   transition: 0.2s ease-in;
 }
-.services .service-cards .card button h6:hover {
-  color: #2e68ff;
+.services .service-cards .card a h6:hover {
+  color: #f6ff8f;
 }
 
 .contactus {

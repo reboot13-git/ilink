@@ -59,7 +59,7 @@ scards.innerHTML += `<div class="col "  data-aos="fade-up" >
 <img src=${item.imgUrl} alt=${item.heading} />
 <h4> ${item.heading} </h4>
 <p> ${item.description} </p>
-<a href="#contactus" class="nav-link p-0  "><h6>${item.linkText}</h6></a>
+<a href="#contactus" class="nav-link p-0 m-0"><h6>${item.linkText}</h6></a>
 </div>
 </div>`
     })

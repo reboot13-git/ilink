@@ -180,10 +180,10 @@ nav{
             border: 1px solid rgba(255, 255, 255, 0.125);
             border-radius: 0;
             margin-bottom: 2rem;
-            transition: all ease-in 100ms;
+            transition: all ease-in 200ms;
 
             &:hover{
-                transform: scale(1.01);
+                transform: scale(1.025);
             }
             h4{
                 color: #fff;
@@ -201,7 +201,7 @@ nav{
                 color: #ffffff;
             }
         
-            button{
+            a{
                 margin-top: 1rem;
                 color: #fff;
                 padding: 0;
@@ -217,7 +217,7 @@ nav{
                 h6{
                     transition: .2s ease-in;
                     &:hover{
-                        color: #2e68ff;
+                        color: #f6ff8f;
                     }
                 }
             }
