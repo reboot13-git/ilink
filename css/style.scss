@@ -10,6 +10,9 @@
     background: transparent;
     border: none;
 }
+a{
+    text-decoration: none;
+}
 a:target {
     display: block;
     position: relative;
@@ -19,6 +22,7 @@ a:target {
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
 // ::-webkit-scrollbar {
@@ -403,3 +407,10 @@ footer{
 
 
 }
+
+
+//Custom Cursors
+
+// #web{
+//     cursor: url("/imgs/menu.svg") ,auto;
+// }

@@ -4,18 +4,18 @@ let fullYear = d.getFullYear()
 year.innerText = fullYear
 
 
-function scrollToDiv(id){
-  // console.log(id)
-  var element = document.getElementById(id);
-  var headerOffset = 100;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+// function scrollToDiv(id){
+//   // console.log(id)
+//   var element = document.getElementById(id);
+//   // var headerOffset = 100;
+//   var elementPosition = element.getBoundingClientRect().top;
+//   var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-  window.scrollTo({
-       top: offsetPosition,
-       behavior: "smooth"
-  });
-}
+//   // window.scrollTo({
+//   //      top: offsetPosition,
+//   //      behavior: "smooth"
+//   // });
+// }
 
 
 

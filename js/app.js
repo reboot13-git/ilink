@@ -1,4 +1,3 @@
-
 let servicesInfo=[
     {
         "imgUrl": "https://img.icons8.com/nolan/64/web.png",
@@ -55,7 +54,7 @@ let scards = document.getElementById("scards")
 
 function displayCard(){
     servicesInfo.forEach(item=> {
-scards.innerHTML += `<div class="col "  data-aos="fade-up-right" >
+scards.innerHTML += `<div class="col "  data-aos="fade-up" >
 <div class="card" id=${item.id}  >
 <img src=${item.imgUrl} alt=${item.heading} />
 <h4> ${item.heading} </h4>
@@ -67,5 +66,5 @@ scards.innerHTML += `<div class="col "  data-aos="fade-up-right" >
 }
 
 displayCard()
-    
+
 
